@@ -1,0 +1,33 @@
+ :root {
+  color-scheme: dark;
+  --bg: #080c15;
+  --surface: #0e1421;
+  --surface-2: #151d2d;
+  --code: #0c1220;
+  --text: #eef3ff;
+  --muted: #a0abc1;
+  --muted-2: #68758e;
+  --border: #202b3d;
+  --border-strong: #34445e;
+  --accent: #54a6ff;
+  --accent-2: #7465ff;
+}
+:root.light-theme {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-2: #edf1f8;
+  --code: #101a2c;
+  --text: #182237;
+  --muted: #53617a;
+  --muted-2: #7d8aa0;
+  --border: #dfe5ef;
+  --border-strong: #c6d0e0;
+  --accent: #236fe0;
+  --accent-2: #7258e8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; transition: background .25s, color .25s; }
+button, input, textarea { font: inherit; }
+::selection { background: color-mix(in srgb, var(--accent) 35%, transparent); }

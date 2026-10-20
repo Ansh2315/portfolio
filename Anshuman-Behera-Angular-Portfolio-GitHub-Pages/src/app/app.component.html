@@ -1,0 +1,176 @@
+<div class="site-shell" [class.menu-is-open]="menuOpen">
+  <header class="topbar">
+    <a class="brand" href="#home" (click)="closeMenu()" aria-label="Anshuman Behera home">
+      <span class="brand-mark">AB<span>.</span></span>
+      <span class="brand-name">Anshuman <b>Behera</b></span>
+    </a>
+    <button class="menu-toggle" type="button" (click)="menuOpen = !menuOpen" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" [class.open]="menuOpen" aria-label="Main navigation">
+      <a href="#home" (click)="closeMenu()">Home</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#skills" (click)="closeMenu()">Skills</a>
+      <a href="#experience" (click)="closeMenu()">Experience</a>
+      <a href="#projects" (click)="closeMenu()">Projects</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" (click)="toggleTheme()" [attr.aria-label]="lightMode ? 'Switch to dark theme' : 'Switch to light theme'">
+        <span>{{ lightMode ? '☾' : '☼' }}</span><i></i>
+      </button>
+      <button class="button button-outline resume-top" type="button" (click)="downloadResume()"><span>↓</span> Resume</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO GREAT OPPORTUNITIES</div>
+        <p class="hello">Hey there, I'm</p>
+        <h1>Anshuman<br><span>Behera.</span></h1>
+        <h2>Senior Frontend Engineer</h2>
+        <p class="hero-description">Frontend Developer with <strong>4.5+ years of experience</strong> building scalable, responsive product applications. I specialize in Angular, TypeScript, RxJS, NgRx, Nx micro-frontends, and AI-assisted engineering workflows.</p>
+        <div class="hero-cta">
+          <a class="button button-primary" href="#contact">Let's talk <span>↗</span></a>
+          <button class="button button-ghost" type="button" (click)="downloadResume()"><span>↓</span> Download CV</button>
+        </div>
+        <div class="social-row">
+          <a href="mailto:anshuman3127@gmail.com" aria-label="Email">✉</a>
+          <a href="https://github.com/Ansh2315" target="_blank" rel="noreferrer" aria-label="GitHub">⌘</a>
+          <a href="https://www.linkedin.com/in/anshuman-behera24" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <span class="social-caption">Let's connect</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative developer illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span><small>developer.ts</small></div>
+          <div class="code-lines">
+            <p><em>01</em> <span class="code-purple">const</span> <b>developer</b> = &#123;</p>
+            <p><em>02</em> &nbsp; craft: <span class="code-green">'UI experiences'</span>,</p>
+            <p><em>03</em> &nbsp; focus: <span class="code-green">'Angular'</span>,</p>
+            <p><em>04</em> &nbsp; mindset: <span class="code-green">'always learning'</span>,</p>
+            <p><em>05</em> &nbsp; years: <span class="code-orange">4.5</span>+</p>
+            <p><em>06</em> &#125;;</p>
+            <p class="code-comment"><em>07</em> // turning ideas into impact ✦</p>
+          </div>
+        </div>
+        <div class="floating-chip chip-angular"><span class="chip-icon">A</span><span><b>Angular</b><small>UI Engineering</small></span></div>
+        <div class="floating-chip chip-nx"><span class="chip-icon">Nx</span><span><b>Micro-frontends</b><small>Built to scale</small></span></div>
+        <div class="experience-bubble"><strong>4.5<span>+</span></strong><small>Years of<br>experience</small></div>
+        <div class="visual-caption"><span></span> Based in Bengaluru, India</div>
+      </div>
+      <div class="hero-bottom-line"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 06</span></div>
+    </section>
+
+    <section class="stats-strip section-wrap" aria-label="Career highlights">
+      <div class="stat"><strong>4.5<span>+</span></strong><span>Years of experience</span></div>
+      <div class="stat"><strong>50<span>%</span></strong><span>Application performance improvement*</span></div>
+      <div class="stat"><strong>80<span>%</span></strong><span>Lower development effort across teams*</span></div>
+      <div class="stat"><strong>01</strong><span>Product-focused mindset</span></div>
+      <p class="metric-note">*Impact figures from project experience; validate against final resume before publishing.</p>
+    </section>
+
+    <section class="section section-wrap about-section" id="about">
+      <div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>A little about <span>me.</span></h2><p>Curiosity-driven engineering. Thoughtful interfaces. Measurable impact.</p></div>
+      <div class="about-grid">
+        <div class="about-card panel">
+          <div class="about-icon">✳</div>
+          <h3>Turning complexity into clarity.</h3>
+          <p>I'm a frontend engineer with 4.5+ years of experience building enterprise-grade web applications. At Rockwell Automation, I work on industrial software experiences where reliability, performance, and usability matter. My work spans frontend architecture, production support, E2E testing, and selected backend/API tasks.</p>
+          <p>I enjoy solving complex UI problems, building reusable components, improving application architecture, and using AI-assisted workflows thoughtfully. I have also mentored interns and collaborated across frontend and backend work.</p>
+          <div class="about-meta"><span>⌖ Bengaluru, India</span><span>▣ Rockwell Automation</span></div>
+        </div>
+        <div class="principles">
+          <article class="principle"><span class="principle-num">01</span><div><h3>Build for scale</h3><p>Reusable components, modular architecture, and maintainable code.</p></div><span class="principle-arrow">↗</span></article>
+          <article class="principle"><span class="principle-num">02</span><div><h3>Performance by design</h3><p>Responsive, data-rich interfaces that feel fast and dependable.</p></div><span class="principle-arrow">↗</span></article>
+          <article class="principle"><span class="principle-num">03</span><div><h3>Keep learning</h3><p>Curious about emerging frontend patterns, tools, and better ways to work.</p></div><span class="principle-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap skills-section" id="skills">
+      <div class="section-heading"><span class="section-index">02 / TOOLKIT</span><h2>Tools of my <span>trade.</span></h2><p>The technologies I use to turn product ideas into robust interfaces.</p></div>
+      <div class="skills-layout">
+        <div class="skill-bars panel">
+          <div class="panel-title"><span class="mini-symbol">⌘</span><div><h3>Core strengths</h3><p>Comfortable building, debugging, and shipping.</p></div></div>
+          <div class="skill-row" *ngFor="let skill of skills; let i = index">
+            <div class="skill-label"><span>{{ skill.name }}</span><small>{{ skill.group }}</small></div>
+            <div class="skill-track"><span class="skill-fill" [style.--skill-level]="skill.level + '%'" [style.animation-delay]="i * 80 + 'ms'"></span></div>
+          </div>
+          <p class="skill-footnote">Bars are a visual self-assessment, not formal test scores.</p>
+        </div>
+        <div class="stack-panel panel">
+          <div class="panel-title"><span class="mini-symbol">▦</span><div><h3>My tech stack</h3><p>A practical toolkit for modern frontend development.</p></div></div>
+          <div class="stack-grid"><span *ngFor="let tech of stack">{{ tech }}</span></div>
+          <div class="stack-note"><span class="status-dot"></span> Always exploring what’s next</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap experience-section" id="experience">
+      <div class="section-heading"><span class="section-index">03 / JOURNEY</span><h2>Experience that <span>counts.</span></h2><p>Building reliable product experiences with a focus on impact.</p></div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">MAR 2022 — PRESENT <span class="current-pill">CURRENT</span></div>
+          <div class="timeline-card panel">
+            <div class="timeline-top"><div><h3>Software Engineer <span>· Frontend</span></h3><h4>Rockwell Automation</h4></div><span class="company-mark">RA</span></div>
+            <p class="timeline-summary">Building and supporting product-based industrial software applications across frontend engineering, reusable platform features, and production support.</p>
+            <ul>
+              <li>Modernized data-heavy tables with AG Grid, improving table experience and reported performance by 50%.</li>
+              <li>Helped migrate a large Angular codebase to an Nx monorepo and micro-frontend architecture.</li>
+              <li>Built reusable Angular components and shared platform features, reducing development effort by 80% across teams; core platform work also reduced duplicate development by 60%.</li>
+              <li>Served as the primary frontend support engineer for critical production defects, helping maintain application stability.</li>
+              <li>Optimized RxJS workflows; integrated Cypress E2E tests and enterprise libraries; resolved SonarQube, Black Duck, and dependency vulnerabilities; and contributed to FastAPI metadata APIs with PostgreSQL and MongoDB.</li>
+            </ul>
+            <div class="tag-row"><span>Angular</span><span>RxJS</span><span>Nx</span><span>AG Grid</span><span>TypeScript</span><span>SCSS</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="experience-disclaimer">Metrics shown here are drawn from the supplied resume. Confirm any client-sensitive details and permission to publish before going live.</p>
+    </section>
+
+    <section class="section section-wrap projects-section" id="projects">
+      <div class="section-heading heading-with-link"><div><span class="section-index">04 / SELECTED WORK</span><h2>Things I've <span>helped build.</span></h2><p>A selection of product work and engineering challenges.</p></div><a href="https://github.com/Ansh2315" target="_blank" rel="noreferrer" class="text-link">More on GitHub ↗</a></div>
+      <div class="project-grid">
+        <article class="project-card panel" *ngFor="let project of projects">
+          <div class="project-art" [class]="project.accent">
+            <div class="art-top"><span>PROJECT / {{ project.number }}</span><span>↗</span></div>
+            <div class="art-visual">
+              <div class="art-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="art-dashboard">
+                <div class="art-dash-head"></div>
+                <div class="art-metrics"><i></i><i></i><i></i></div>
+                <div class="art-chart"><span *ngFor="let bar of [1,2,3,4,5,6,7,8]"></span></div>
+              </div>
+              <div class="art-emblem">{{ project.icon }}</div>
+            </div>
+            <div class="art-bottom"><span>{{ project.outcome }}</span><span>✦</span></div>
+          </div>
+          <div class="project-body"><div class="project-title-row"><span class="project-number">{{ project.number }}</span><h3>{{ project.title }}</h3></div><p>{{ project.description }}</p><div class="tag-row"><span *ngFor="let tag of project.tags">{{ tag }}</span></div><a href="https://github.com/Ansh2315" target="_blank" rel="noreferrer" class="project-link">Explore related work <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="project-note">Project descriptions are based on the supplied resume. Add approved screenshots, live demos, or public repository links if available.</p>
+    </section>
+
+    <section class="contact-band section-wrap" id="contact">
+      <div class="contact-intro"><span class="section-index">05 / WHAT'S NEXT?</span><div class="contact-orbit">↗</div><h2>Have a good one<br><span>in mind?</span></h2><p>Whether it's a product idea, a challenging UI, or a new opportunity — I'd love to hear about it.</p><a class="contact-email" href="mailto:anshuman3127@gmail.com">anshuman3127@gmail.com <span>↗</span></a></div>
+      <form class="contact-form panel" (ngSubmit)="sendMessage()" #contactForm="ngForm">
+        <div class="form-heading"><h3>Let's start a conversation.</h3><p>Tell me a little about what you're thinking.</p></div>
+        <div class="form-grid">
+          <label>Your name<input name="name" [(ngModel)]="form.name" required placeholder="Jane Smith"></label>
+          <label>Your email<input name="email" [(ngModel)]="form.email" required email type="email" placeholder="jane@company.com"></label>
+        </div>
+        <label>Subject <span class="optional">(optional)</span><input name="subject" [(ngModel)]="form.subject" placeholder="A great opportunity"></label>
+        <label>Your message<textarea name="message" [(ngModel)]="form.message" required rows="4" placeholder="A few details about your project or role..."></textarea></label>
+        <button class="button button-primary submit-button" type="submit" [disabled]="contactForm.invalid">Send a message <span>↗</span></button>
+        <p class="form-note" *ngIf="submitted">Your email app should open with the message pre-filled. Thanks for reaching out!</p>
+        <p class="form-note">This form opens your default email app; it does not send or store data on a server.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">AB<span>.</span></span><span class="brand-name">Anshuman <b>Behera</b></span></a><span>Designed with intention. Built with Angular.</span><div class="footer-links"><a href="https://github.com/Ansh2315" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/anshuman-behera24" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></div></footer>
+</div>
